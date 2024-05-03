@@ -1,6 +1,14 @@
 ## Hosted Project
-
-[E-Commerce API Render URL](https://node-course-e-commerce.onrender.com/)
+create a repository
+create a local repository
+Open terminal
+rm -rf .git
+git init
+git add .
+git commit -m ""
+git remote add origin https://github.com/benconsult/e-Commerce_api.git
+git branch -M main
+git push -u origin main
 
 #### Setup Basic Express Server
 
