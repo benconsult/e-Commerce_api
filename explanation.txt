@@ -1,4 +1,4 @@
 1. To avoid adding try-catch manually, we use ('express-async-errors')
 2. middleware for error and not found should come last
 3. NB: error handler is invoke in the existing route, hence should come last
-
+4. Morgan: for debugging route on console GET / 200 14 - 2.959 ms

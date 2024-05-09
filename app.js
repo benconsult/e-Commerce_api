@@ -4,10 +4,14 @@ require('express-async-errors')
 
 const express = require('express');
 const app = express();
+//other middlewares
+const morgan = require('morgan')
+
 const connectDB = require('./db/connect');
 const notFoundMiddleware = require('./middleware/not-found')
 const errorHandlerMiddleware = require('./middleware/error-handler')
 
+app.use(morgan('tiny'));
 app.use(express.json())
 
 
