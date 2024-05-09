@@ -2,3 +2,5 @@
 2. middleware for error and not found should come last
 3. NB: error handler is invoke in the existing route, hence should come last
 4. Morgan: for debugging route on console GET / 200 14 - 2.959 ms
+5. custom validators on mongoosejs for email. install npm i validator
+used in place of custom regex (job-api)
