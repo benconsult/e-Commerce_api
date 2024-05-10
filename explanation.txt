@@ -9,3 +9,7 @@ add 'unique' property for mongoose validation. NB: unique validation did not wor
 7. first user should be have the admin role only.
 8.  Hash password should be save in a pre save hook in the user shema.
 NB: hashing before saving the password
+9. JWT: sign(payload,secret,options),verify(token,secret)
+NB: instead of sending the entire object, we can extract some features to be useed as TOKEN (id,name,role) as payload
+Hence, we generate a TOKEN  which will be used for authorization
+We are returning tokenUser and token instead of the entire user - UPDATED
