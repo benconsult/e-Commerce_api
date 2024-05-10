@@ -13,3 +13,10 @@ NB: hashing before saving the password
 NB: instead of sending the entire object, we can extract some features to be useed as TOKEN (id,name,role) as payload
 Hence, we generate a TOKEN  which will be used for authorization
 We are returning tokenUser and token instead of the entire user - UPDATED
+10. we are using utils folder for cookies so that we can move them from one project to another
+Here, we are refractoring the jwt to use utils folder by creating a function to create a token
+accept oject of payload.
+Also, another fuction for verify
+NB: you can import the 2 functions or use index.js (just like errors)
+Finally, use the two functions in the AuthController.js: update the token variable to use the
+payload argument.
