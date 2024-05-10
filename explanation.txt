@@ -6,3 +6,6 @@
 used in place of custom regex (job-api)
 6. For email checks, it can be checked either in controller or user
 add 'unique' property for mongoose validation. NB: unique validation did not work.
+7. first user should be have the admin role only.
+8.  Hash password should be save in a pre save hook in the user shema.
+NB: hashing before saving the password
