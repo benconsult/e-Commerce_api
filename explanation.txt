@@ -4,3 +4,5 @@
 4. Morgan: for debugging route on console GET / 200 14 - 2.959 ms
 5. custom validators on mongoosejs for email. install npm i validator
 used in place of custom regex (job-api)
+6. For email checks, it can be checked either in controller or user
+add 'unique' property for mongoose validation. NB: unique validation did not work.
