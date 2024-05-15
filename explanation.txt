@@ -29,4 +29,7 @@ res.cookie(name,value, {options object})
 NB: time is measured in miliseconds: for 1 day = 1000ms * 60 sec * 60 mins * 24 hours
 new Date(Date.now())
 Run and check the cookie tab on postman
+13. Accessing cookies on the server: cookies coming from FE to imcoming request
+cookie-parser package is needed, used in App.js
+Cookie parsing is done by the server
 
