@@ -20,3 +20,13 @@ Also, another fuction for verify
 NB: you can import the 2 functions or use index.js (just like errors)
 Finally, use the two functions in the AuthController.js: update the token variable to use the
 payload argument.
+NOTE: the essence of refractoring is REUSEABILITY
+11. Sending jwt token with cookies
+Previously: Browser - Aplication - Local storage 
+Alternatively, we use, session storage - cookies
+12. Cookeies: we are no longer sending token as response after registration , but cookies
+res.cookie(name,value, {options object})
+NB: time is measured in miliseconds: for 1 day = 1000ms * 60 sec * 60 mins * 24 hours
+new Date(Date.now())
+Run and check the cookie tab on postman
+
