@@ -32,4 +32,10 @@ Run and check the cookie tab on postman
 13. Accessing cookies on the server: cookies coming from FE to imcoming request
 cookie-parser package is needed, used in App.js
 Cookie parsing is done by the server
+14. Refractoring cookies setup: create a function in utils, export, remove createJWT from AuthController and replace with the new
+method attachCCookiesResponse.
+15: secure flag: brownser can send only with https: integrity
+NB: set a condition to check if it's in prod or test
+Signed flag: is for signature using jwt_secret. Add to the cookie parser invoke app.use(cookieParser(process.env.JWT_SECRET));
+
 
